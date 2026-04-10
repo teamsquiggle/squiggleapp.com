@@ -57,6 +57,8 @@ body {
     --label-secondary: light-dark(#AA8365, #9FB4FE);
     --label-tertiary: light-dark(#F4D5BE, #3E5297);
 
+    --label-primary-inverse: light-dark(#FFFAE5, #643B25);
+
     /* backgrounds */
     --background-primary: light-dark(#FFFAE5, #17224B);
     --background-secondary: light-dark(#FAE9D7, #253364);

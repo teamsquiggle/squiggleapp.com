@@ -12,6 +12,15 @@
     flex-direction: row;
 }
 
+.navbar-buttons-wrapper {
+    /* flex */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    gap: 6px;
+}
+
 .button.button-primary.button-navbar {
     /* appearance */
     color-scheme: unset;

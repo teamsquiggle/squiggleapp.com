@@ -1,0 +1,13 @@
+.navbar-wrapper {
+    /* apperance */
+    position: fixed;
+    top: 22px;
+    width: 100%;
+    padding: 22px calc(var(--landing-border-padding) + 22px);
+
+    /* flex */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}

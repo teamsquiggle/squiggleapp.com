@@ -1,0 +1,142 @@
+@import url('navbar.css');
+@import url('hero.css');
+
+@import url('components/input.css');
+
+/* FONT FACES */
+
+@font-face {
+    font-family: 'Geist';
+    src: url('https://github.com/vercel/geist-font/raw/refs/heads/main/fonts/Geist/webfonts/Geist%5Bwght%5D.woff2') format('woff2');
+}
+
+/* GLOBAL STYLES */
+
+body {
+    /* appearance */
+    width: 100vw;
+    height: 100vh;
+    background: var(--landing-border);
+    padding: var(--landing-border-padding);
+
+    /* typography */
+    color: var(--label-primary);
+    font-family: var(--type-body), sans-serif;
+
+    /* flex */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    color-scheme: light dark;
+    
+    --landing-border: light-dark(#643B25, #141D40);
+    --landing-border-padding: 24px;
+
+    /* palette */
+    --palette-persimmon: #FF8527;
+    --palette-banana: #FFD400;
+    --palette-honeydew: #0FD55B;
+    --palette-polarIce: light-dark(#00C8BA, #00E5D5);
+    --palette-plum: light-dark(#9A5CFF, #B963FF);
+
+    /* --palette-banana-translucent: rgba(255, 212, 0, 0.6); */
+
+    /* labels */
+    --label-primary: light-dark(#643B25, #FFFAE5);
+    --label-secondary: light-dark(#AA8365, #9FB4FE);
+    --label-tertiary: light-dark(#F4D5BE, #3E5297);
+
+    /* backgrounds */
+    --background-primary: light-dark(#FFFAE5, #17224B);
+    --background-secondary: light-dark(#FAE9D7, #253364);
+
+    /* typography */
+    --type-headline: 'Fraunces', serif;
+    --type-body: 'Geist', sans-serif;
+
+    --size-headline: 26px;
+    --size-headline-s: 22px;
+    --size-body-l: 20px;
+    --size-body: 16px;
+    --size-subheadline: 14px;
+    --size-footnote: 12px;
+
+    --height-headline: 32px;
+    --height-headline-s: 28px;
+    --height-body-l: 25px;
+    --height-body: 20px;
+    --height-subheadline: 18px;
+    --height-footnote: 16px;
+}
+
+
+.breakpoint-mobile {
+    display: none;
+}
+
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) {...} */
+
+/* Medium devices (landscape tablets, 768px and below) */
+@media only screen and (max-width: 768px) {
+    :root {
+        --size-body: 17px;
+        --height-body: 22px;
+    }
+
+    .breakpoint-desktop {
+        display: none;
+    }
+
+    .breakpoint-mobile {
+        display: inherit;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and below) */
+@media only screen and (max-width: 600px) {
+    :root {
+        --landing-border-padding: 8px;
+    }
+}
+
+h1 {
+    font-family: var(--type-headline);
+    font-weight: 500;
+    font-size: var(--size-headline);
+    line-height: var(--height-headline);
+    color: var(--label-primary);
+}
+
+h3 {
+    font-family: var(--type-headline);
+    font-weight: 500;
+    font-size: var(--size-body-l);
+    line-height: var(--height-body-l);
+    color: var(--label-primary);
+    font-variation-settings: "opsz" 22;
+}
+
+p {
+    font-family: var(--type-body);
+    font-weight: 400;
+    font-size: var(--size-body);
+    line-height: var(--height-body);
+    color: var(--label-secondary);
+}
+
+p em {
+    all: unset;
+    color: var(--label-primary);
+}

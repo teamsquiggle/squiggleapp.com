@@ -109,7 +109,7 @@ body {
 /* Small devices (portrait tablets and large phones, 600px and below) */
 @media only screen and (max-width: 600px) {
     :root {
-        --landing-border-padding: 8px;
+        --landing-border-padding: 4px;
     }
 }
 

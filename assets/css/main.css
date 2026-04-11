@@ -13,22 +13,12 @@
 /* GLOBAL STYLES */
 
 body {
-    /* appearance */
-    width: 100vw;
-    height: 100vh;
-    background: var(--landing-border);
-    padding: var(--landing-border-padding);
-
+    /* apperance */
+    background: var(--hero-border);
+    
     /* typography */
     color: var(--label-primary);
     font-family: var(--type-body), sans-serif;
-
-    /* flex */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 0px;
 }
 
 * {
@@ -40,8 +30,8 @@ body {
 :root {
     color-scheme: light dark;
     
-    --landing-border: light-dark(#643B25, #141D40);
-    --landing-border-padding: 24px;
+    --hero-border: light-dark(#643B25, #141D40);
+    --hero-border-padding: 24px;
 
     /* palette */
     --palette-persimmon: #FF8527;
@@ -109,7 +99,7 @@ body {
 /* Small devices (portrait tablets and large phones, 600px and below) */
 @media only screen and (max-width: 600px) {
     :root {
-        --landing-border-padding: 4px;
+        --hero-border-padding: 4px;
     }
 }
 
@@ -142,3 +132,52 @@ p em {
     all: unset;
     color: var(--label-primary);
 }
+
+/* LANDING */
+
+.landing-wrapper {
+    /* appearance */
+    height: 100%;
+
+    /* flex */
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.landing-sections-wrapper {
+    /* appearance */
+    width: 100%;
+    background: var(--background-primary);
+    border-radius: 54px;
+    
+    /* flex */
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.landing-section.section-twoColumn {
+    display: flex;
+    flex-direction: row;
+}
+
+.landing-section.section-twoColumn .section-column {
+    /* appearance */
+    height: 100%;
+    padding: 48px;
+    
+    /* flex */
+    flex: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: var(--hero-spacing);
+}
+
+/* SCROLLBAR */

@@ -3,14 +3,20 @@
     width: 100%;
     height: 106px;
     position: fixed;
-    top: var(--landing-border-padding);
-    padding: 22px calc(var(--landing-border-padding) + 22px);
+    top: var(--hero-border-padding);
+    padding: 22px calc(var(--hero-border-padding) + 22px);
 
     /* flex */
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar-wrapper.breakpoint-mobile {
+        display: flex;
+    }
 }
 
 .navbar-buttons-wrapper {
